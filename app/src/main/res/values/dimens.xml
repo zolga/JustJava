@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Main Relative Layout-->
+    <dimen name="layout_margin">16dp</dimen>
+
+    <!--Logo-->
+    <dimen name="logo_margin_top">70dp</dimen>
+    <dimen name="logo_margin_bottom">15dp</dimen>
+
+    <!--Edit Name-->
+    <dimen name="edit_text_margin_top">35dp</dimen>
+    <dimen name="edit_text_padding_top_bottom">5dp</dimen>
+    <dimen name="edit_text_padding_left">10dp</dimen>
+
+    <!--Order Details-->
+    <dimen name="order_details_margin">10dp</dimen>
+    <dimen name="order_details_padding_bottom">30dp</dimen>
+    <dimen name="order_details_padding_left">16dp</dimen>
+
+    <!--Text Title-->
+    <dimen name="title_margin_16">16dp</dimen>
+    <dimen name="title_margin_top">10dp</dimen>
+
+    <!--Quantity Text-->
+    <dimen name="q_text_padding_left">16dp</dimen>
+
+    <!--Check Box-->
+    <dimen name="ckb_margin_bottom">16dp</dimen>
+    <dimen name="ckb_padding_left">24dp</dimen>
+
+    <!--Round Buttons-->
+    <dimen name="round_btn_size">40dp</dimen>
+    <dimen name="round_btn_margin_left">16dp</dimen>
+
+    <!--Order Button-->
+    <dimen name="order_btn_margin_10">10dp</dimen>
+
+    <!--Text Size-->
+    <dimen name="text_size_20">20dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_18">18dp</dimen>
+    <dimen name="text_size_70">70dp</dimen>
+
+</resources>
