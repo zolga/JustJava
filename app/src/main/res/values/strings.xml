@@ -15,4 +15,7 @@
     <string name="price">price</string>
     <string name="order">order</string>
 
+    <string name="validation_increase">You cannot have more than 100 coffee</string>
+    <string name="validation_decrease">You cannot have less than 1 coffee</string>
+
     </resources>

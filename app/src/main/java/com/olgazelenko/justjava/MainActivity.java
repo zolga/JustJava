@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
     final String STATE_USER_NAME = "name";
     int quantity = 0;
     int orderPrice;
-    TextView quantityTextView;
-    TextView priceTextView;
-    CheckBox whippedCreamCheckBox;
-    CheckBox chocolateCheckBox;
-    EditText nameEditText;
+    private TextView quantityTextView;
+    private TextView priceTextView;
+    private CheckBox whippedCreamCheckBox;
+    private CheckBox chocolateCheckBox;
+    private EditText nameEditText;
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void increaseQuantity(View view) {
         if (quantity == 100) {
-            Toast.makeText(this, "You cannot have more than 100 coffee", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.validation_increase, Toast.LENGTH_SHORT).show();
             return;
         }
         quantity = quantity + 1;
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void decreaseQuantity(View view) {
         if (quantity == 1) {
-            Toast.makeText(this, "You cannot have less than 1 coffee", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.validation_decrease, Toast.LENGTH_SHORT).show();
             return;
         }
         quantity = quantity - 1;
