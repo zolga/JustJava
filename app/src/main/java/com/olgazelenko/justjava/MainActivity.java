@@ -161,10 +161,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void composeEmail(String body) {
+        String[] cc_emails = new String[]{"aaa@gmail.com"};
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, EMAIL_ADDRESS);
         intent.putExtra(Intent.EXTRA_SUBJECT, EMAIL_SUBJECT);
+        intent.putExtra(Intent.EXTRA_CC, cc_emails);
         intent.putExtra(Intent.EXTRA_TEXT, body);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
