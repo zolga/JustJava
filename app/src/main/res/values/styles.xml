@@ -19,17 +19,36 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="title" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_16</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:layout_marginBottom">@dimen/title_margin_16</item>
         <item name="android:layout_marginTop">@dimen/title_margin_16</item>
     </style>
+    <style name="title_topping" parent="title">
+        <item name="android:layout_marginTop">@dimen/title_margin_top</item>
+    </style>
 
     <style name="checkBox" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:paddingLeft">@dimen/ckb_padding_left</item>
         <item name="android:baselineAligned">false</item>
         <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="checkBoxSecondary" parent="checkBox">
+        <item name="layout_marginBottom">@dimen/ckb_margin_bottom</item>
+    </style>
+
+    <style name="quantity_button" parent="@android:style/Widget.CompoundButton">
+        <item name="android:layout_width">@dimen/round_btn_size</item>
+        <item name="android:layout_height">@dimen/round_btn_size</item>
+        <item name="android:background">@drawable/circle_red</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
 </resources>

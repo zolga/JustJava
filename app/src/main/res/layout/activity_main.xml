@@ -68,32 +68,22 @@
                 android:paddingLeft="@dimen/order_details_padding_left">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/title_margin_top"
                     android:text="@string/topping"
-                    style="@style/title"/>
+                    style="@style/title_topping" />
 
                 <CheckBox
                     android:id="@+id/whippedCream"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/ckb_margin_bottom"
                     android:onClick="updateTopping"
                     android:text="@string/whipped_cream"
-                    style="@style/checkBox"/>
+                    style="@style/checkBoxSecondary" />
 
                 <CheckBox
                     android:id="@+id/chocolate_checkbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:onClick="updateTopping"
                     android:text="@string/chocolate"
-                    style="@style/checkBox"/>
+                    style="@style/checkBox" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/quantity"
                     style="@style/title" />
 
@@ -107,10 +97,10 @@
                         android:layout_height="@dimen/round_btn_size"
                         android:background="@drawable/circle_red"
                         android:baselineAligned="false"
-                        android:onClick="increaseQuantity"
-                        android:text="@string/plus"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/text_size_20" />
+                        android:textSize="@dimen/text_size_20"
+                        android:onClick="increaseQuantity"
+                        android:text="@string/plus" />
 
                     <TextView
                         android:id="@+id/quantity_text_view"
@@ -132,8 +122,6 @@
                 </LinearLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/price"
                     style="@style/title" />
 
@@ -142,7 +130,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/zero"
-                    android:textSize="@dimen/text_size_18"/>
+                    android:textSize="@dimen/text_size_18" />
             </LinearLayout>
 
         </ScrollView>
